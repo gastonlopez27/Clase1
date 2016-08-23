@@ -30,7 +30,7 @@ echo "Otro pedazo de codigo"
 
 <?php
 
-$veces = 1000;
+$veces = 1000000;
 $con0 = 0;
 $con1 = 0;
 $con2 = 0;
@@ -45,8 +45,12 @@ $con9 = 0;
 
 
 for ($i = 0; $i <= $veces; $i++) {
-    
-    switch (rand(0,9)) {
+
+    switch (rand(0,9)
+
+
+
+    	) {
     	case '0':
     		$con0++;
     		break;
@@ -76,7 +80,12 @@ for ($i = 0; $i <= $veces; $i++) {
     		break;
 
     		case '7':
+    		if ($con7 <= ($veces/20))
+    		{
     		$con7++;
+    		}
+    	    else 
+    		$i--;
     		break;
 
     		case '8':
@@ -105,6 +114,16 @@ echo "El numero 7 salio un: ".($con7 / $veces * 100)."% <br>";
 echo "El numero 8 salio un: ".($con8 / $veces * 100)."% <br>";
 echo "El numero 9 salio un: ".($con9 / $veces * 100)."% <br>";
 
+?>
+
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+var_dump($cars)
+
+//hacer array 
+
+//var_dump es como echo pero para arrays
+//mostrar desde javascript console.log("error")
 ?>
 
 </body>
