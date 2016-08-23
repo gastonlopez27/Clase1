@@ -4,7 +4,12 @@
 </head>
 <body>
 <!-- en el body es lo que ve el cliente
-<h1>Hola Mundo</h1>
+<h1>Hola Mundo
+primer regla para que el codigo php funcione tiene que estar dentro de un archivo .php
+
+la segunda regla es que corra en el localhost:8080
+
+internet information server???	</h1>
 <?php
 
 $nombre = "Gaston";
@@ -25,7 +30,7 @@ echo "Otro pedazo de codigo"
 
 <?php
 
-$veces = 10;
+$veces = 1000;
 $con0 = 0;
 $con1 = 0;
 $con2 = 0;
@@ -88,22 +93,19 @@ for ($i = 0; $i <= $veces; $i++) {
     		break;
     }
 }
-echo "$con0 <br>"
-echo "$con1 <br>"
-echo "$con2 <br>"
-echo "$con3 <br>"
-echo "$con4 <br>"
-echo "$con5 <br>"
-echo "$con6 <br>"
-echo "$con7 <br>"
-echo "$con8 <br>"
-echo "$con9 <br>"
 
-
+echo "El numero 0 salio un: ".($con0 / $veces * 100)."% <br>";
+echo "El numero 1 salio un: ".($con1 / $veces * 100)."% <br>";
+echo "El numero 2 salio un: ".($con2 / $veces * 100)."% <br>";
+echo "El numero 3 salio un: ".($con3 / $veces * 100)."% <br>";
+echo "El numero 4 salio un: ".($con4 / $veces * 100)."% <br>";
+echo "El numero 5 salio un: ".($con5 / $veces * 100)."% <br>";
+echo "El numero 6 salio un: ".($con6 / $veces * 100)."% <br>";
+echo "El numero 7 salio un: ".($con7 / $veces * 100)."% <br>";
+echo "El numero 8 salio un: ".($con8 / $veces * 100)."% <br>";
+echo "El numero 9 salio un: ".($con9 / $veces * 100)."% <br>";
 
 ?>
-
-
 
 </body>
 </html>
