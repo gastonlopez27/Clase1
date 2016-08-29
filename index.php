@@ -124,7 +124,7 @@ var_dump($cars)
 
 //var_dump es como echo pero para arrays
 //mostrar desde javascript console.log("error")
-?>
 
+?>
 </body>
 </html>
