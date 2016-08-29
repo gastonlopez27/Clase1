@@ -7,7 +7,7 @@
 
 // App3
 
-$a=3;
+$a=1;
 $b=1;
 $c=7;
 
@@ -21,7 +21,12 @@ $digitos[] = $c;
 
 sort($digitos);
 
-echo "El numero del medio es: $digitos[1]"
+if($digitos[1]!=$digitos[0] and $digitos[1]!=$digitos[2])
+{
+echo "El numero del medio es: $digitos[1]";
+}
+else
+echo  "No hay valor del medio";
 ?>
 </body>
 </html>
